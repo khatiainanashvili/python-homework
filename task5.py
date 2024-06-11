@@ -77,9 +77,9 @@ print(actor_info(search_item))
 my_list = [1, 2, 7, 7, "G", "%", True, "%"]
 
 
-def unique_list(list):
-    unique = set(list)
-    return unique
+def unique_list(list1):
+    unique = set(list1)
+    return list(unique)
 
 
 print(unique_list(my_list))
@@ -134,8 +134,7 @@ def dict_by_str():
             dictionary[char] += 1
         else:
             dictionary[char] = 1
-    for char, count in dictionary.items():
-        diction = {f"{char}': {count}"}
+
 
     return dictionary
 
