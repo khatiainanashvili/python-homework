@@ -8,20 +8,24 @@
 
 from abc import ABC, abstractmethod
 
+
 class Countries(ABC):
+
     @abstractmethod
     def population(self):
         pass
+
     @abstractmethod
     def capital_city(self):
         pass
+
     @abstractmethod
     def constitutional_form(self):
         pass
 
 
 class Georgia(Countries):
-    def __init__(self ):
+    def __init__(self):
         self.__budget = "28,7 billion"
         self._perimeter = "69,700 km²"
         self.head_of_state = "Prime minister"
